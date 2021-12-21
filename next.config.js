@@ -1,8 +1,14 @@
-module.exports = {
-    webpack5: true,
-    webpack: (config) => {
-      config.resolve.fallback = { electron: false };
-  
-      return config;
-    },
-  };
+/**
+ * @type {import('next').NextConfig}
+ */
+
+ const nextConfig = {
+  webpack: (config, { webpack }) => {
+      config.plugins.push(new webpack.IgnorePlugin({
+          resourceRegExp: /^electron$/
+      }),);
+      return config
+  }
+}
+
+module.exports = nextConfig
