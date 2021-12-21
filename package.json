@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "dev": "next"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "author": "",
   "license": "ISC",
