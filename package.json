@@ -22,8 +22,5 @@
     "semantic-ui-react": "^2.0.4",
     "solc": "^0.4.17",
     "web3": "^1.6.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.5.0"
   }
 }
